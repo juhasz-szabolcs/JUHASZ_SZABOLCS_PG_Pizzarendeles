@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés Összegzése</title>
+</head>
+<body>
+    <h1>Rendelés Összegzése</h1>
+    <p>Név: {{ name }}</p>
+    <p>Telefon: {{ phone }}</p>
+    <p>Pizza mérete: {{ size }}</p>
+    <p>Feltétek: {{ toppings | join(', ') }}</p>
+    <p>Mennyiség: {{ quantity }}</p>
+    <p>Kért szállítási idő: {{ delivery_time }}</p>
+    <p>Egyéb kívánságok: {{ comments }}</p>
+
+        <!-- Visszalépő link az index.html-re -->
+        <p><a href="/">Vissza a főoldalra</a></p>
+</body>
+</html>
