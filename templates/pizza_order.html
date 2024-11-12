@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Rendelés</title>
+</head>
+<body>
+    <h1>Pizza rendelési űrlap</h1>
+    <form method="POST">
+        <fieldset>
+            <legend>Vevő adatai</legend>
+            Név: <input type="text" name="name" required><br>
+            Telefon: <input type="tel" name="phone" required><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pizza mérete</legend>
+            <input type="radio" name="size" value="Kicsi" required> Kicsi<br>
+            <input type="radio" name="size" value="Nagy"> Nagy<br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Feltétek</legend>
+            <input type="checkbox" name="toppings" value="Sonka"> Sonka<br>
+            <input type="checkbox" name="toppings" value="Sajt"> Sajt<br>
+            <input type="checkbox" name="toppings" value="Gomba"> Gomba<br>
+        </fieldset>
+        
+        Mennyiség: <input type="number" name="quantity" min="1" required><br>
+        Kért szállítási idő: <input type="time" name="delivery_time" required><br>
+        Egyéb kívánságok: <textarea name="comments"></textarea><br>
+        
+        <button type="reset">Visszaállítás</button>
+        <button type="submit">Elküldés</button>
+    </form>
+</body>
+</html>
